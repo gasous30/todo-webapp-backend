@@ -1,0 +1,25 @@
+GET http://localhost:3001/todoweb/watchlist
+
+###
+POST http://localhost:3001/todoweb/watchlist
+Content-Type: application/json
+
+{
+    "category": "Marvel",
+    "name": "Spiderman: No Way Home",
+    "place": "Disney Hotstar"
+}
+
+###
+GET http://localhost:3001/todoweb/watchlist/61dee7bed27086f2043af726
+
+###
+DELETE http://localhost:3001/todoweb/watchlist/61dee7bed27086f2043af726
+
+###
+PATCH http://localhost:3001/todoweb/watchlist/61dee7ddd27086f2043af729
+Content-Type: application/json
+
+{
+    "is_watched": true
+}

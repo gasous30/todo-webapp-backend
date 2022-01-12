@@ -1,0 +1,32 @@
+GET http://localhost:3001/todoweb/task
+
+###
+
+GET http://localhost:3001/todoweb/task/61dea53996b32bfca1f8de9c
+
+###
+
+POST http://localhost:3001/todoweb/task
+Content-Type: application/json
+
+{
+    "category": "Kuliah",
+    "deadline": "2021-01-03 23:30",
+    "name": "Laprak IPE",
+    "is_done": false,
+    "issuer": "IPE",
+    "description": "Modul Elektrik"
+}
+
+### 
+
+DELETE http://localhost:3001/todoweb/task/61deb44219d42dff0fb9d2a2
+
+###
+
+PATCH http://localhost:3001/todoweb/task/61dea53996b32bfca1f8de9c
+Content-Type: application/json
+
+{
+    "deadline": "2022-02-10 18:30:23"
+}

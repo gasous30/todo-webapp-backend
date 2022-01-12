@@ -1,0 +1,25 @@
+GET http://localhost:3001/todoweb/event
+
+###
+GET http://localhost:3001/todoweb/event/61dec9b316a33d391ca462fa
+
+###
+POST http://localhost:3001/todoweb/event
+Content-Type: application/json
+
+{
+    "issuer": "Tanoto Foundation",
+    "time": "2022-01-12 23:00:00",
+    "name": "Meeting Tribe"
+}
+
+###
+DELETE http://localhost:3001/todoweb/event/61dec9b316a33d391ca462fa
+
+###
+PATCH http://localhost:3001/todoweb/event/61deca0a16a33d391ca462fd
+Content-Type: application/json
+
+{
+    "time": "2020-05-12 19:00:00"
+}

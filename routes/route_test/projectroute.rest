@@ -1,0 +1,29 @@
+GET http://localhost:3001/todoweb/project
+
+###
+
+GET http://localhost:3001/todoweb/project/61dee523fda13fb40a627350
+
+###
+
+POST http://localhost:3001/todoweb/project
+Content-Type: application/json
+
+{
+    "category": "Object Detection",
+    "name": "Iron Man Project",
+    "is_done": false
+}
+
+### 
+
+DELETE http://localhost:3001/todoweb/project/61dee523fda13fb40a627350
+
+###
+
+PATCH http://localhost:3001/todoweb/project/61dee4c3fda13fb40a62734c
+Content-Type: application/json
+
+{
+    "is_done": true
+}
