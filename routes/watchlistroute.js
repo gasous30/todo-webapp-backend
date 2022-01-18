@@ -27,8 +27,18 @@ router.get("/", async (req, res) => {
 });
 
 // Get One
-router.get("/:id", getWatchlist, (req, res) => {
+router.get("/id/:id", getWatchlist, (req, res) => {
   res.send(res.watchlist);
+});
+
+// Get by Category
+router.get("/category/:category", async (req, res) => {
+  try {
+    const watchlist = await Watchlist.find({ category: req.params.category });
+    res.send(watchlist);
+  } catch (err) {
+    res.status(500).json({ message: err.message });
+  }
 });
 
 // Create One

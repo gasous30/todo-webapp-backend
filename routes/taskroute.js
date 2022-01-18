@@ -51,9 +51,6 @@ router.post("/", async (req, res) => {
 
 // Update One
 router.patch("/:id", getTask, async (req, res) => {
-  if (req.body.is_done != null) {
-    res.task.is_done = req.body.is_done;
-  }
   if (req.body.deadline != null) {
     res.task.deadline = req.body.deadline;
   }

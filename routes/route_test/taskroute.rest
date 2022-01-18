@@ -10,12 +10,12 @@ POST http://localhost:3001/todoweb/task
 Content-Type: application/json
 
 {
-    "category": "Kuliah",
-    "deadline": "2021-01-03 23:30",
-    "name": "Laprak IPE",
+    "category": "Tanoto Foundation",
+    "deadline": "2021-03-30 23:30",
+    "name": "Wawancara Profesional",
     "is_done": false,
-    "issuer": "IPE",
-    "description": "Modul Elektrik"
+    "issuer": "Tanoto Foundation",
+    "description": "Wawawncara"
 }
 
 ### 

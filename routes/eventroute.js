@@ -38,7 +38,8 @@ router.post("/", async (req, res) => {
     name: req.body.name,
     issuer: req.body.issuer,
     description: req.body.description,
-    time: req.body.time,
+    started_at: req.body.started_at,
+    end_at: req.body.end_at,
   });
   try {
     const newEvent = await event.save();
@@ -50,8 +51,11 @@ router.post("/", async (req, res) => {
 
 // Update One
 router.patch("/:id", getEvent, async (req, res) => {
-  if (req.body.time != null) {
-    res.event.time = req.body.time;
+  if (req.body.started_at != null) {
+    res.event.started_at = req.body.started_at;
+  }
+  if (req.body.end_at != null) {
+    res.event.end_at = req.body.end_at;
   }
   try {
     const updatedEvent = await res.event.save();

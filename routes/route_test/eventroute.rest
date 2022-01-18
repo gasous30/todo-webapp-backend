@@ -9,7 +9,8 @@ Content-Type: application/json
 
 {
     "issuer": "Tanoto Foundation",
-    "time": "2022-01-12 23:00:00",
+    "started_at": "2022-01-21 20:00:00",
+    "end_at": "2022-01-21 23:00:00",
     "name": "Meeting Tribe"
 }
 

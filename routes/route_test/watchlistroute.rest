@@ -11,7 +11,10 @@ Content-Type: application/json
 }
 
 ###
-GET http://localhost:3001/todoweb/watchlist/61dee7bed27086f2043af726
+GET http://localhost:3001/todoweb/watchlist/id/61e036448aeebff373c05f1a
+
+###
+GET  http://localhost:3001/todoweb/watchlist/category/Drakor
 
 ###
 DELETE http://localhost:3001/todoweb/watchlist/61dee7bed27086f2043af726
